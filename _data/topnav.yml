@@ -1,0 +1,68 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: 嵌入式
+      folderitems:
+        - title: linux
+          url: /articles/embedded/linux/linux.html
+        - title: 单片机
+          url: /articles/embedded/mcu/mcu.html
+        - title: 模拟电路
+          url: /articles/embedded/analog/analog.html
+        - title: 数字电路
+          url: /articles/embedded/digital/digital.html
+    - title: 编程语言
+      folderitems:
+        - title: c
+          url: /articles/lang/c/c.html
+        - title: cpp
+          url: /articles/lang/cpp/cpp.html
+        - title: java
+          url: /articles/lang/java/java.html
+        - title: python
+          url: /articles/lang/python/python.html
+        - title: javascript
+          folderitems:
+            - title: jQuery
+            - url: /jQuery.html
+          
+
+    - title: 算法与仿真
+      folderitems:
+        - title: Matlab
+          external_url: /mydoc_introduction.html
+        - title: java
+          external_url: /p1_landing_page.html
+        - title: python
+          external_url: /p2_landing_page.html
+          
+    - title: EDA
+      folderitems:
+        - title: Allegro
+          external_url: /mydoc_introduction.html
+        - title: Altium Designer
+          external_url: /p1_landing_page.html
+        - title: python
+          external_url: /p2_landing_page.html
+
+
+    - title: 电磁兼容
+      folderitems:
+        - title: C/C++
+          external_url: /mydoc_introduction.html
+        - title: java
+          external_url: /p1_landing_page.html
+        - title: python
+          external_url: /p2_landing_page.html
+    
+    
+    - title: 网站技术
+      folderitems:
+        - title: jekyll
+          external_url: /使用jekyll创建博客.html
+        - title: jQuery
+          external_url: /jQuery.html
+        - title: python
+          external_url: /p2_landing_page.html
