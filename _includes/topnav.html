@@ -1,8 +1,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-static-top">
         <div class="navbar-header">
-            {{% assign index = site.url %}}
-            <a class="fa fa-home fa-lg navbar-brand" href="{{'/index.html' | prepend:index}}">
+            <a class="fa fa-home fa-lg navbar-brand" href="{{'/index.html' | prepend:site.baseurl}}">
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="projectTitle">{{site.data.global.title}}</span>
             </a>
@@ -25,12 +24,17 @@
                             </a>
                         </li>
                         {% elsif page.url contains folderitem.url %}
-                        <li class="dropdownActive"><a href="{{folderitem.url }}">
+                        <li class="dropdownActive">
+                            <a href="{{folderitem.url | prepend:site.baseurl}}">
                             {{folderitem.title}}
                             </a>
                         </li>
                         {% else %}
-                        <li><a href="{{folderitem.url | prepend:site.baseurl}}">{{folderitem.title}}</a></li>
+                        <li>
+                            <a href="{{folderitem.url | prepend:site.baseurl}}">
+                                {{folderitem.title}}
+                            </a>
+                        </li>
                         {% endif %}
                         {% endfor %}
                     </ul>
