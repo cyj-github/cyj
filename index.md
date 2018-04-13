@@ -6,4 +6,5 @@ permalink: index.html
 ---
 
 ## Build the Theme
+{{site.url}}
 
